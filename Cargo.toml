@@ -1,0 +1,31 @@
+[package]
+name = "matterterm"
+version = "0.1.0"
+edition = "2021"
+description = "Unofficial terminal app for Mattermost"
+readme = "README.md"
+homepage = "https://github.com/celeo/matterterm"
+repository = "https://github.com/celeo/matterterm"
+license = "MIT OR Apache-2.0"
+exclude = [
+  ".github"
+]
+keywords = [
+  "mattermost"
+]
+categories = [
+  "command-line-utilities"
+]
+
+[dependencies]
+anyhow = "1.0.44"
+dialoguer = "0.9.0"
+fern = "0.6.0"
+home = "0.5.3"
+log = "0.4.14"
+reqwest = { version = "0.11.6", features = ["json", "blocking"] }
+serde = { version = "1.0.130", features = ["derive"] }
+serde_json = "1.0.68"
+structopt = "0.3.25"
+termion = "1.5.6"
+tui = "0.16.0"
